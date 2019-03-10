@@ -18,8 +18,7 @@
   "scripts": {
     "start": "yarn workspace @rafab/web start",
     "dev": "yarn workspace @rafab/web compile && concurrently --kill-others \"yarn workspace @rafab/web compile -w\" \"yarn workspace @rafab/web start\"",
-    "compile": "yarn workspace @rafab/components compile",
-    "precommit": "lint-staged"
+    "compile": "yarn workspace @rafab/components compile"
   },
   "workspaces": [
     "packages/*"
