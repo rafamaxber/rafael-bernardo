@@ -1,17 +1,19 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom';
-import { NavBar } from '../../components/NavBar'
+import { RouteProps } from 'react-router';
+
+import { NavBar } from '@rafab/components'
 
 interface IDefaultLayoutProps {
-  component: React.ComponentType<*>
+  component: React.ComponentType,
 };
 
-export default ({ component: Component, ...rest }: IDefaultLayoutProps) => (
+export default ({ component: Component, ...rest }: IDefaultLayoutProps & RouteProps) => (
   <Route
     {...rest}
     render={matchProps => (
       <React.Fragment>
-        <NavBar />
+        <NavBar/>
         <Component {...matchProps} />
       </React.Fragment>
     )}

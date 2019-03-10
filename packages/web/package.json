@@ -1,0 +1,49 @@
+{
+  "name": "@rafab/web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "source": true,
+  "author": "Rafael Bernardo <rafamaxber@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "react",
+    "styled-components",
+    "decorators",
+    "parcel bundler",
+    "parcel",
+    "react scaffolding"
+  ],
+  "dependencies": {
+    "@rafab/components": "^0.0.1",
+    "@types/react": "^16.8.7",
+    "connected-react-router": "^6.2.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.1"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html -d dist-dev -p 3000 --open",
+    "build": "NODE_ENV=production parcel build ./src/index.html",
+    "compile": "tsc -b",
+    "lint:css": "stylelint './src/**/*.{ts,tsx}'",
+    "precommit": "lint-staged",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "prepush": "tsc --pretty --jsx  react"
+  },
+  "lint-staged": {
+    "./src/**/*.{tsx,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "./src/**/atoms.{tsx,css,md}": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}

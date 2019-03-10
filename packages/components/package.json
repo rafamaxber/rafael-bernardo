@@ -1,0 +1,18 @@
+{
+  "name": "@rafab/components",
+  "version": "0.0.1",
+  "main": "dist",
+  "source": true,
+  "scripts": {
+    "compile": "tsc -b"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.7",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.1",
+    "styled-components": "^4.1.3"
+  }
+}
