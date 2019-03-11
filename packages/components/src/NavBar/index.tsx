@@ -5,7 +5,7 @@ const NavBar = () => (
   <React.Fragment>
     <ul>
       <li>
-        <Link to="/">Outro link trocado</Link>
+        <Link to="/">Home 2</Link>
       </li>
       <li>
         <Link to="/about">About</Link>

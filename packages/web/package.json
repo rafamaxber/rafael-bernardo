@@ -25,7 +25,7 @@
     "redux-saga": "^1.0.1"
   },
   "scripts": {
-    "start": "parcel ./src/index.html -d dist-dev -p 3000 --open",
+    "dev": "parcel ./src/index.html -d dist-dev -p 3000 --open",
     "build": "NODE_ENV=production parcel build ./src/index.html",
     "compile": "tsc -b",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
