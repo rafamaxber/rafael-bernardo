@@ -4,14 +4,17 @@
     "allowJs": false,
     "composite": true,
     "declaration": true,
+    "sourceMap": true,
     "jsx": "preserve",
     "noEmit": false,
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDirs": ["src", "stories"],
+    "baseUrl": "src",
     "typeRoots": [
       "../../@types",
       "../../node_modules/@types"
     ]
   },
-  "include": ["src/"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
 }

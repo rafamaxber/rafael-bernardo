@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Route } from 'react-router-dom';
 import { RouteProps } from 'react-router';
 
-import { NavBar } from '@rafab/components'
+import { NavBar } from '../../../../components/dist/src'
 
 interface IDefaultLayoutProps {
   component: React.ComponentType,

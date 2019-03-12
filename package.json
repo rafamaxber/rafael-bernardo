@@ -16,15 +16,13 @@
     "react scaffolding"
   ],
   "scripts": {
-    "start": "lerna run --parallel start",
-    "tt": "lerna exec --scope @rafab/components -- npm run dev && concurrently --kill-others \"lerna exec --scope @rafab/components -- npm run dev\" \"lerna exec --scope @rafab/web -- npm run dev\"",
-
-    "dev": "concurrently --kill-others \"lerna exec --scope @rafab/components -- npm run dev\" \"lerna exec --scope @rafab/web -- npm run dev\"",
-
-    "compile": "lerna run @rafab/components compile"
+    "postinstall": "lerna link && lerna bootstrap --hoist",
+    "dev": "concurrently --kill-others \"lerna exec --scope @rafamaxber/web -- npm run dev\" \"lerna exec --scope @rafamaxber/components -- npm run dev\"",
+    "storybook": "lerna exec --scope @rafamaxber/components -- npm run storybook",
+    "clean": "lerna clean -y"
   },
   "workspaces": [
-    "packages/*"
+    "packages/**"
   ],
   "engines": {
     "node": ">=9.0.0"

@@ -1,5 +1,5 @@
 {
-  "name": "@rafab/web",
+  "name": "@rafamaxber/web",
   "version": "1.0.0",
   "main": "index.js",
   "source": true,
@@ -15,7 +15,7 @@
     "react scaffolding"
   ],
   "dependencies": {
-    "@rafab/components": "^0.0.1",
+    "@rafamaxber/components": "*",
     "@types/react": "^16.8.7",
     "connected-react-router": "^6.2.2",
     "react": "^16.7.0",
