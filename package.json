@@ -20,6 +20,7 @@
     "dev": "concurrently --kill-others \"lerna exec --scope @rafamaxber/web -- npm run dev\" \"lerna exec --scope @rafamaxber/components -- npm run dev\"",
     "storybook": "lerna exec --scope @rafamaxber/components -- npm run storybook",
     "web:build": "lerna exec --scope @rafamaxber/web -- npm run build",
+    "web:deploy": "lerna exec --scope @rafamaxber/web -- npm run deploy",
     "clean": "lerna clean -y"
   },
   "workspaces": [

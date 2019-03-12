@@ -18,6 +18,7 @@
     "@rafamaxber/components": "*",
     "@types/react": "^16.8.7",
     "connected-react-router": "^6.2.2",
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
@@ -31,7 +32,9 @@
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
     "precommit": "lint-staged",
     "lint": "tslint 'src/**/*.{ts,tsx}'",
-    "prepush": "tsc --pretty --jsx  react"
+    "prepush": "tsc --pretty --jsx  react",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "lint-staged": {
     "./src/**/*.{tsx,json,css,md}": [
