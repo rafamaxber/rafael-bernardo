@@ -19,6 +19,7 @@
     "postinstall": "lerna link && lerna bootstrap --hoist",
     "dev": "concurrently --kill-others \"lerna exec --scope @rafamaxber/web -- npm run dev\" \"lerna exec --scope @rafamaxber/components -- npm run dev\"",
     "storybook": "lerna exec --scope @rafamaxber/components -- npm run storybook",
+    "web:build": "lerna exec --scope @rafamaxber/web -- npm run build",
     "clean": "lerna clean -y"
   },
   "workspaces": [
