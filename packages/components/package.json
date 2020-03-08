@@ -9,22 +9,20 @@
     "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
-    "@types/react": "^16.8.7",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1",
-    "redux": "^4.0.1",
-    "redux-saga": "^1.0.1",
-    "styled-components": "^4.1.3"
+    "@types/react": "^16.9.23",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
-    "@storybook/addon-info": "^5.0.1",
-    "@storybook/react": "^5.0.1",
-    "@types/storybook__react": "^4.0.1",
+    "@storybook/addon-info": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "@types/storybook__react": "^5.2.1",
     "awesome-typescript-loader": "^5.2.1",
-    "react-docgen-typescript-loader": "^3.0.1",
+    "react-docgen-typescript-loader": "^3.7.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.8.3"
   },
   "description": "> TODO: description",
   "keywords": [],

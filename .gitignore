@@ -82,3 +82,5 @@ typings/
 dist/
 
 dist-dev/
+
+packages/web/dist/
